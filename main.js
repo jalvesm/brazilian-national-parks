@@ -41,8 +41,6 @@ async function renderPage() {
     cardContainer.appendChild(card);
   }
 
-
-  updateCounter(); // Inicializa o contador
 }
 
 // Chama a função para renderizar a página após o carregamento da página
