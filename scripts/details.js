@@ -65,24 +65,36 @@ function createModal(park) {
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">${park.name}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          <img src="${park.image}" class="card-img-top object-fit-cover" alt="..." height="200px">
           <p>${park.description}</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Save changes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary">Close</button>
         </div>
       </div>
     </div>
   `;
 
+  const closeButton = modalDiv.querySelector('.close');
+  const dismissButton = modalDiv.querySelector('.btn-secondary');
+
+  const modal = new bootstrap.Modal(modalDiv);
+
+  closeButton.addEventListener('click', () => {
+    modal.hide();
+  });
+
+  dismissButton.addEventListener('click', () => {
+    modal.hide();
+  });
+
   return modalDiv;
 }
-
 
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchPark() {
