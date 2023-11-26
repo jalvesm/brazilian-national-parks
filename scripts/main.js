@@ -44,14 +44,47 @@ async function renderPage() {
 }
 
 
-mapboxgl.accessToken = 'key goes here';
-const map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v12', // style URL
-center: [-74.5, 40], // starting position [lng, lat]
-zoom: 9 // starting zoom
-});
+function getMap() {
+const centralPoint = [-43.618309977588, -19.348631627533067]
+  mapboxgl.accessToken = 'pk.eyJ1Ijoiam9hbmFhbHZlc20iLCJhIjoiY2xwZmh0bDcwMWJ3MTJqcXN2MGhlOWFkcSJ9.zLCmGObcm88gLI6twBZnmQ';
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v12',
+    center: centralPoint, // starting position [lng, lat]
+    zoom: 11
+  });
+  return map;
+}
+
+function get_card_marker(park){
+  return `
+  <a class="text-decoration-none textreset" href="./details.html?id=${parks.id}"
+  <img src="${parks.image}" class="card-img-top" alt="${parks.name}">
+  <div class="card-body"
+  <h5 class="card-title text truncate">${park.name}</h5>
+  <p class="card-text">${park.location_name}</p>
+  <div>
+  `
+}
 
 
-// Chama a função para renderizar a página após o carregamento da página
+function getLocations() {
+  const url = "https://jsonserver.joanamorais.repl.co/parks";
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((parks) => {
+      parks.forEach((park) => {
+        const marker = new mapboxgl.Marker({ color: "black" }) 
+          .setLngLat(park.location_coordinates) 
+          .addTo(map);
+      });
+    });
+}
+
+
+
+getMap();
 window.addEventListener("load", renderPage);
