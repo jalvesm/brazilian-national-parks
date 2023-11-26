@@ -1,4 +1,3 @@
-
 // Função para renderizar um card
 function renderCard(park) {
   const cardDiv = document.createElement("div");
@@ -17,6 +16,7 @@ function renderCard(park) {
 
   return cardDiv;
 }
+
 
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchParkDetails() {
@@ -42,6 +42,17 @@ async function renderPage() {
   }
 
 }
+
+
+mapboxgl.accessToken = 'pk.eyJ1Ijoiam9hbmFhbHZlc20iLCJhIjoiY2xwZmh0bDcwMWJ3MTJqcXN2MGhlOWFkcSJ9.zLCmGObcm88gLI6twBZnmQ';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+style: 'mapbox://styles/mapbox/streets-v12', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+
 
 // Chama a função para renderizar a página após o carregamento da página
 window.addEventListener("load", renderPage);

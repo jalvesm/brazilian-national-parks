@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Minha página</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,6 +20,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 </head>
 
 <body>
@@ -87,14 +90,16 @@
         </div>
         <!--END OF CARROUSSEL -->
         <br><br>
-        
         <!--MAP -->
-        <h2 class="mb-0 mt-5" id="parkName">Locations</h2>
+        <h2 class="mb-0 mt-5">Locations</h2>
         <hr class="mt-2">
-        <p>Espaço para mapa<br><br></p>
+        <div id="map-container">
+            <div id="map"></div>
+
+        </div>
         <!--END OF MAP -->
 
-        <!-- LISTA DE PRODUTOS -->
+        <!-- CARDS PARKS -->
         <section class="mt-5">
             <h2 class="mb-0 mt-5" id="parkName">Brazilian National Parks</h2>
             <hr class="mt-2">
@@ -103,8 +108,9 @@
 
                 </div>
         </section>
-        <!-- FIM DA LISTA DE PRODUTOS-->
+        <!-- END OF CARDS PARKS -->
 
+        <!-- ABOUT ME -->
         <div class="container">
             <h2 class="mb-0 mt-5" id="parkName">About me</h2>
             <hr class="mt-2">
@@ -123,25 +129,25 @@
                 </div>
                 <div class="card" style="border: none; width: 300px;">
                     <img class="card-img-top"
-                         src="https://i.pinimg.com/736x/64/4f/61/644f61eb943a9d41f30935858347894a.jpg"
-                         alt="profile picture"
-                         style="width: 100%; height: 300px; object-fit: cover;"
-                    >
+                        src="https://i.pinimg.com/736x/64/4f/61/644f61eb943a9d41f30935858347894a.jpg"
+                        alt="profile picture" style="width: 100%; height: 300px; object-fit: cover;">
                     <div class="card-body">
-                      <p class="card-text"><b>NOME:</b> Joana Morais <br><b>CURSO:</b> Engenharia de Software
-                      </p>
+                        <p class="card-text"><b>NOME:</b> Joana Morais <br><b>CURSO:</b> Engenharia de Software
+                        </p>
                     </div>
-                  </div>
-                  
+                </div>
+
             </div>
         </div>
+        <!-- END OF ABOUT ME -->
 
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script src="./scripts/main.js"></script>
+
 </body>
 
 </html>

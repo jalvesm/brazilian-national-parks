@@ -45,7 +45,7 @@ function renderCard(park) {
       <img src="${park.image}" class="card-img-top object-fit-cover" alt="..." height="200px">
       <div class="card-body">
 
-        <a class="btn btn-primary-outline" href="./details.html?id=${park.id}">Ver Detalhes</a>
+        <a class="btn btn-primary-outline" href="./albumDetails.html?id=${park.id}">Ver Detalhes</a>
       </div>
     </div>
   `;
