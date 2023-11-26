@@ -7,7 +7,7 @@ function renderCard(park) {
     <div class="card">
       <img src="${park.image}" class="card-img-top object-fit-cover" alt="..." height="200px">
       <div class="card-body">
-        <h5 class="card-title">${park.title}</h5>
+        <h5 class="card-title">${park.name}</h5>
         <p class="card-text">${park.description}</p>
         <a class="btn btn-primary-outline" href="./details.html?id=${park.id}">Ver Detalhes</a>
       </div>
@@ -52,24 +52,25 @@ const centralPoint = [-43.618309977588, -19.348631627533067]
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v12',
     center: centralPoint, // starting position [lng, lat]
-    zoom: 11
+    zoom: 5
   });
   return map;
 }
 
 function get_card_marker(park){
   return `
-  <a class="text-decoration-none textreset" href="./details.html?id=${parks.id}"
-  <img src="${parks.image}" class="card-img-top" alt="${parks.name}">
+  <a class="text-decoration-none textreset" href="./details.html?id=${park.id} target="blank">
+  <img src="${park.image}" class="card-img-top" alt="${park.name}">
   <div class="card-body"
   <h5 class="card-title text truncate">${park.name}</h5>
-  <p class="card-text">${park.location_name}</p>
+  <p class="card-text">Longitude: ${park.location_coordinates[0]}</p>
+  <p class="card-text">Latitude: ${park.location_coordinates[1]}</p>
   <div>
   `
 }
 
 
-function getLocations() {
+function getLocations(map) {
   const url = "https://jsonserver.joanamorais.repl.co/parks";
   fetch(url)
     .then((response) => {
@@ -77,8 +78,10 @@ function getLocations() {
     })
     .then((parks) => {
       parks.forEach((park) => {
+        const popup = new mapboxgl.Popup({offset: 25}).setHTML(get_card_marker(park))
         const marker = new mapboxgl.Marker({ color: "black" }) 
           .setLngLat(park.location_coordinates) 
+          .setPopup(popup)
           .addTo(map);
       });
     });
@@ -86,5 +89,6 @@ function getLocations() {
 
 
 
-getMap();
+const map = getMap();
+getLocations(map);
 window.addEventListener("load", renderPage);
