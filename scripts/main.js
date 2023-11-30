@@ -17,7 +17,6 @@ function renderCard(park) {
   return cardDiv;
 }
 
-
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchParkDetails() {
   try {
@@ -36,10 +35,12 @@ async function renderPage() {
 
   const parks = await fetchParkDetails();
 
+
   for (let i = 0; i < parks.length; i++) {
     const card = renderCard(parks[i]);
     cardContainer.appendChild(card);
   }
+  updateCarroussel(park);
 
 }
 
@@ -86,8 +87,6 @@ function getLocations(map) {
       });
     });
 }
-
-
 
 const map = getMap();
 getLocations(map);

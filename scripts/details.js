@@ -8,13 +8,16 @@ async function fetchParkDetails(parkId) {
     console.error('Erro ao buscar os dados: ', error);
   }
 }
+
 function updateParkDetails(park) {
+  
   if (park) {
-    document.getElementById('parkName').textContent = park.title;
+    document.getElementById('parkName').textContent = park.name;
     document.getElementById('parkImage').src = park.image;
     document.getElementById('parkDescription').textContent = park.description;
-
-    updateAdditionalImages(product.images);
+    document.getElementById('parkLong').textContent = park.location_coordinates[0].toFixed(2);
+    document.getElementById('parkLat').textContent = park.location_coordinates[1].toFixed(2);
+    document.getElementById('parkData').textContent = park.data;
   } else {
     alert('park não encontrado');
   }
@@ -34,9 +37,9 @@ function renderCard(park) {
 
   cardDiv.innerHTML = `
     <div class="card">
-      <img src="${park.image}" class="card-img-top object-fit-cover" alt="..." height="200px">
+      <img src="${park.image}" class="card-img-top object-fit-cover" alt="park picture" height="200px">
       <div class="card-body">
-        <a class="btn btn-primary-outline" href="#" data-bs-toggle="modal" data-bs-target="#parkModal${park.id}">Ver Detalhes</a>
+        <a class="btn btn-primary-outline" href="./details.html?id=${park.id}" data-bs-toggle="modal" data-bs-target="#parkModal${park.id}">Ver Detalhes</a>
       </div>
     </div>
   `;
@@ -61,11 +64,11 @@ function createModal(park) {
   modalDiv.role = "dialog";
 
   modalDiv.innerHTML = `
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">${park.name}</h5>
-          <button type="button" class="close" aria-label="Close">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -73,25 +76,20 @@ function createModal(park) {
           <img src="${park.image}" class="card-img-top object-fit-cover" alt="..." height="200px">
           <p>${park.description}</p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary">Close</button>
-        </div>
+
       </div>
     </div>
   `;
-
-  const closeButton = modalDiv.querySelector('.close');
-  const dismissButton = modalDiv.querySelector('.btn-secondary');
-
+  const dismissButton = modalDiv.querySelector('.close');
   const modal = new bootstrap.Modal(modalDiv);
 
-  closeButton.addEventListener('click', () => {
-    modal.hide();
-  });
+  const closeModal = () => {
+    modal.toggle();
+    
+    modalDiv.remove();
+  };
 
-  dismissButton.addEventListener('click', () => {
-    modal.hide();
-  });
+  dismissButton.addEventListener('click', closeModal);
 
   return modalDiv;
 }
