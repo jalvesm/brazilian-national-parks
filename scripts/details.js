@@ -1,7 +1,7 @@
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchParkDetails(parkId) {
   try {
-    const response = await fetch(`https://jsonserver.joanamorais.repl.co/parks/${parkId}`);
+    const response = await fetch(`https://nationalparksjsonserver.joanamorais.repl.co/parks/${parkId}`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -18,6 +18,7 @@ function updateParkDetails(park) {
     document.getElementById('parkLong').textContent = park.location_coordinates[0].toFixed(2);
     document.getElementById('parkLat').textContent = park.location_coordinates[1].toFixed(2);
     document.getElementById('parkData').textContent = park.data;
+    document.getElementById('parkAuthor').textContent = park.author;
   } else {
     alert('park não encontrado');
   }
@@ -97,7 +98,7 @@ function createModal(park) {
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchPark() {
   try {
-    const response = await fetch('https://JSONServer.JoanaMorais.repl.co/parks');
+    const response = await fetch('https://nationalparksjsonserver.joanamorais.repl.co/parks');
     const data = await response.json();
     return data;
   } catch (error) {

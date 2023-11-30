@@ -8,7 +8,7 @@ function renderCard(park) {
       <img src="${park.image}" class="card-img-top object-fit-cover" alt="..." height="200px">
       <div class="card-body">
         <h5 class="card-title">${park.name}</h5>
-        <p class="card-text">${park.description}</p>
+        <p class="card-text">${park.tinyDescription}</p>
         <a class="btn btn-primary-outline" href="./details.html?id=${park.id}">Ver Detalhes</a>
       </div>
     </div>
@@ -20,7 +20,7 @@ function renderCard(park) {
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchParkDetails() {
   try {
-    const response = await fetch('https://JSONServer.JoanaMorais.repl.co/parks');
+    const response = await fetch('https://nationalparksjsonserver.joanamorais.repl.co/parks');
     const data = await response.json();
     return data;
   } catch (error) {
@@ -53,7 +53,7 @@ const centralPoint = [-43.618309977588, -19.348631627533067]
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v12',
     center: centralPoint, // starting position [lng, lat]
-    zoom: 5
+    zoom: 4
   });
   return map;
 }
@@ -72,7 +72,7 @@ function get_card_marker(park){
 
 
 function getLocations(map) {
-  const url = "https://jsonserver.joanamorais.repl.co/parks";
+  const url = "https://nationalparksjsonserver.joanamorais.repl.co/parks";
   fetch(url)
     .then((response) => {
       return response.json();
