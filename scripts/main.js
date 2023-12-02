@@ -40,7 +40,6 @@ async function renderPage() {
     const card = renderCard(parks[i]);
     cardContainer.appendChild(card);
   }
-  updateCarroussel(park);
 
 }
 
