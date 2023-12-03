@@ -1,4 +1,4 @@
-const urlBase = "https://nationalparksjsonserver.joanamorais.repl.co";
+const urlBase = "https://jsonserver1.joanamorais.repl.co";
 
 async function renderDetails() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -8,7 +8,7 @@ async function renderDetails() {
   updateParkDetails(park);
 }
 
-// Função para buscar detalhes do produto a partir do arquivo JSON
+// Função para buscar detalhes do produzto a partir do arquivo JSON
 async function fetchParkDetails(parkId) {
   try {
     const response = await fetch(`${urlBase}/parks/${parkId}?_embed=photos`);
@@ -38,6 +38,7 @@ function updateParkDetails(park) {
   }
 }
 
+// ALBUM DETAILS: renderiza novas fotos, sem estrutura de cards
 async function renderPhotos(photos) {
   
   const divPhotos = document.getElementById('albumPhotos'); // revisar o ID dessa div
@@ -50,8 +51,9 @@ async function renderPhotos(photos) {
     divPhotos.innerHTML += htmlPhoto;   
   });
 }
-
-
+// ##########################################################################################
+// Cards section with bugs
+// ALBUM GENÉRICO: Renderiza os cards antigos 
 function renderCard(park) {
   const cardDiv = document.createElement("div");
   cardDiv.className = "col-md-3 col-sm-6 mb-3";
@@ -67,7 +69,6 @@ function renderCard(park) {
   return cardDiv;
 }
 
-
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchPark() {
   try {
@@ -81,7 +82,6 @@ async function fetchPark() {
 
 // Função para renderizar a página
 async function renderPage() {
-  const numCards = 12;
   const cardContainer = document.getElementById("albumPhotos");
 
   const parks = await fetchPark();
@@ -93,7 +93,78 @@ async function renderPage() {
 
 }
 
+// ##########################################################################################
+// CODE FOR TICKBOX IN 'DESTAQUE' SECTION
+
+let idDestaque = null;
+
+async function initiateCheckbox() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const albumId = urlParams.get('id');
+
+  try {
+    const response = await fetch (`${urlBase}/highlights?albumId=${albumId}`);
+    const data = await response.json();
+    setHighlight(data);
+  } catch (error) {
+    console.error('Album não é destaque: ', error);
+  }
+
+  // Get checkbox element by its id
+  const checkbox = document.getElementById('highlight');
+
+  checkbox.addEventListener('change', function(event) {
+    // checks if box is ticked
+    if (event.target.checked) {
+      addHighlight()
+      console.log('Checkbox marcado!');
+    } else {
+      removeHighlight()
+      console.log('Checkbox não está marcado!');
+    }
+  });
+}
+
+function setHighlight(highlights) {
+  const checkbox = document.getElementById('highlight');
+
+  if (highlights && highlights[0]) {
+    checkbox.checked = true;
+    idDestaque = highlights[0].id;
+  }
+}
+
+function addHighlight() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const albumId = urlParams.get('id');
+  idDestaque = albumId;
+
+  const url = `${urlBase}/highlights`;
+  const data = { albumId: parseInt(albumId)};
+  const request = {
+    method: "POST",
+    headers: {"Contedt-Type": "application/json"},
+    body: JSON.stringify(data),
+  };
+  fetch(url, request).then((response) => {
+    console.log(response);
+    alert('Album adicionado aos destaques!')
+  });
+  return true;
+}
+
+function removeHighlight() {
+  const url = `${urlBase}/highlights/${idDestaque}`;
+  const request = { method: "DELETE"};
+  fetch(url, request).then((response) => {
+    console.log(response);
+    alert('Album removido dos destaques!');
+  });
+  return true;
+}
+
 // Chama a função para renderizar a página após o carregamento da página
 renderDetails();
 
 window.addEventListener("load", renderPage);
+initiateCheckbox();

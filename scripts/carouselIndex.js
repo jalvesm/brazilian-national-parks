@@ -1,5 +1,5 @@
 function loadCarousel(){
-    fetch('https://nationalparksjsonserver.joanamorais.repl.co/hightlights/?_expand=park')
+    fetch('https://jsonserver1.joanamorais.repl.co/highlights/?_expand=park')
         .then(response => response.json())
         .then(data => {
             const carouselIndicators = document.getElementById('carouselIndicators');
