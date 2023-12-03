@@ -45,37 +45,47 @@
 
       <!-- Detalhes -->
       <div class="row">
+
         <!-- Imagem -->
         <div class="col-md-4">
           <img src="" class="w-100 object-fit-cover" height="300" alt="Foto do parque" id="parkImage">
         </div>
+        
         <!-- Descrição -->
         <div class="col-md-8">
+          
+          <!-- Checkbox -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="hightlight">
+            <label class="form-check-label" for="hightlight">
+              Destaque
+            </label>
+          </div>
+          <br>
+          <!-- Description text -->
           <p class="description" id="parkDescription"></p>
+          <b>AUTOR DA FOTO</b>
+          <p class="coord-lat" id="parkAuthor"></p>
 
           <div class="row no-gutters">
             <div class="col-12 col-sm-6 col-md-8">
               <b>LOCATION</b><br>
               <p class="coord-long" id="parkLong"></p>
               <p class="coord-long" id="parkLat"></p>
-
             </div>
+
             <div class="col-6 col-md-4">
-              <b>DATA </b>
+              <b>DATA</b>
               <p class="coord-lat" id="parkData"></p></div>
-              <b>AUTOR DA FOTO: </b>
-              <p class="coord-lat" id="parkAuthor"></p></div>
+            </div>
           </div>
-
-
-        </div>
 
         <!-- LISTA DE PARQUES -->
         <section class="mt-5">
           <h2 class="mb-0 mt-5" id="parkName">Items</h2>
           <hr class="mt-2">
           <div class="container">
-            <div class="row" id="card-container">
+            <div class="row" id="albumPhotos">
 
             </div>
         </section>

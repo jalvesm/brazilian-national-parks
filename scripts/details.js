@@ -1,7 +1,17 @@
+const urlBase = "https://nationalparksjsonserver.joanamorais.repl.co";
+
+async function renderDetails() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const parkId = urlParams.get('id');
+
+  const park = await fetchParkDetails(parkId);
+  updateParkDetails(park);
+}
+
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchParkDetails(parkId) {
   try {
-    const response = await fetch(`https://nationalparksjsonserver.joanamorais.repl.co/parks/${parkId}`);
+    const response = await fetch(`${urlBase}/parks/${parkId}?_embed=photos`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -19,18 +29,28 @@ function updateParkDetails(park) {
     document.getElementById('parkLat').textContent = `Latitude: ${park.location_coordinates[1].toFixed(2)}`;
     document.getElementById('parkData').textContent = park.data;
     document.getElementById('parkAuthor').textContent = park.author;
+
+    if (park.photos && park.photos.length > 0) {
+      renderPhotos(park.photos);
+    }
   } else {
     alert('park não encontrado');
   }
 }
 
-async function renderDetails() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const parkId = urlParams.get('id');
-
-  const park = await fetchParkDetails(parkId);
-  updateParkDetails(park);
+async function renderPhotos(photos) {
+  
+  const divPhotos = document.getElementById('albumPhotos'); // revisar o ID dessa div
+  photos.forEach(photo => {
+    const htmlPhoto = `
+    <a data-bs-toggle="modal" data-bs-target="#modal-fotos">
+    <img src="${photo.image}" alt="${photo.description}" width="200">
+    <p>${photo.description}</p>
+    `;
+    divPhotos.innerHTML += htmlPhoto;   
+  });
 }
+
 
 function renderCard(park) {
   const cardDiv = document.createElement("div");
@@ -44,61 +64,14 @@ function renderCard(park) {
       </div>
     </div>
   `;
-
-  const modalDiv = createModal(park);
-  cardDiv.appendChild(modalDiv);
-
-  cardDiv.querySelector('.btn').addEventListener('click', () => {
-    const myModal = new bootstrap.Modal(document.getElementById(`parkModal${park.id}`));
-    myModal.show();
-  });
-
   return cardDiv;
 }
 
 
-function createModal(park) {
-  const modalDiv = document.createElement("div");
-  modalDiv.className = "modal";
-  modalDiv.id = `parkModal${park.id}`;
-  modalDiv.tabIndex = "-1";
-  modalDiv.role = "dialog";
-
-  modalDiv.innerHTML = `
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">${park.name}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="${park.image}" class="card-img-top object-fit-cover" alt="..." height="200px">
-          <p>${park.description}</p>
-        </div>
-
-      </div>
-    </div>
-  `;
-  const dismissButton = modalDiv.querySelector('.close');
-  const modal = new bootstrap.Modal(modalDiv);
-
-  const closeModal = () => {
-    modal.toggle();
-    
-    modalDiv.remove();
-  };
-
-  dismissButton.addEventListener('click', closeModal);
-
-  return modalDiv;
-}
-
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchPark() {
   try {
-    const response = await fetch('https://nationalparksjsonserver.joanamorais.repl.co/parks');
+    const response = await fetch(`${urlBase}/photos`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -109,7 +82,7 @@ async function fetchPark() {
 // Função para renderizar a página
 async function renderPage() {
   const numCards = 12;
-  const cardContainer = document.getElementById("card-container");
+  const cardContainer = document.getElementById("albumPhotos");
 
   const parks = await fetchPark();
 
