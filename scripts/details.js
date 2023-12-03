@@ -40,17 +40,25 @@ function updateParkDetails(park) {
 
 // ALBUM DETAILS: renderiza novas fotos, sem estrutura de cards
 async function renderPhotos(photos) {
-  
-  const divPhotos = document.getElementById('albumPhotos'); // revisar o ID dessa div
+  const divPhotos = document.getElementById('card-container');
+
   photos.forEach(photo => {
     const htmlPhoto = `
-    <a data-bs-toggle="modal" data-bs-target="#modal-fotos">
-    <img src="${photo.image}" alt="${photo.description}" width="200">
-    <p>${photo.description}</p>
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="card">
+          <a data-bs-toggle="modal" data-bs-target="#modal-fotos">
+            <img src="${photo.image}" alt="${photo.description}" class="card-img-top object-fit-cover" height="200px">
+          </a>
+          <div class="card-body">
+            <p>${photo.description}</p>
+          </div>
+        </div>
+      </div>
     `;
-    divPhotos.innerHTML += htmlPhoto;   
+    divPhotos.innerHTML += htmlPhoto;
   });
 }
+
 // ##########################################################################################
 // Cards section with bugs
 // ALBUM GENÉRICO: Renderiza os cards antigos 
@@ -87,7 +95,7 @@ async function renderPage() {
   const parks = await fetchPark();
 
   for (let i = 0; i < parks.length; i++) {
-    const card = renderCard(parks[i]);
+    const card = renderPhotos(photos[i]);
     cardContainer.appendChild(card);
   }
 
