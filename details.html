@@ -7,34 +7,35 @@
   <title>Park details</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
 
 <body>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="./index.html">
-      <img src="https://www.svgrepo.com/show/159227/mountain-at-night.svg" width="100" height="100" class="d-inline-block align-top" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">
+      <img src="https://www.svgrepo.com/show/159227/mountain-at-night.svg" width="100" height="100"
+        class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-          <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
       </ul>
-  </div>
-</nav>
-<!-- END NAVBAR -->
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
 
   <!-- LISTA DE ALBUNS -->
   <section class="mt-5">
@@ -50,10 +51,10 @@
         <div class="col-md-4">
           <img src="" class="w-100 object-fit-cover" height="300" alt="Foto do parque" id="parkImage">
         </div>
-        
+
         <!-- Descrição -->
         <div class="col-md-8">
-          
+
           <!-- Checkbox -->
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="highlight">
@@ -76,9 +77,10 @@
 
             <div class="col-6 col-md-4">
               <b>DATA</b>
-              <p class="coord-lat" id="parkData"></p></div>
+              <p class="coord-lat" id="parkData"></p>
             </div>
           </div>
+        </div>
 
         <!-- LISTA DE PARQUES -->
         <section class="mt-5">
@@ -94,8 +96,43 @@
   </section>
   <!-- FIM DA LISTA DE ALBUNS-->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="./scripts/details.js"></script>
+  <!-- Modal -->
+  <div class="modal modal-xl fade" id="modal-fotos" tabindex="-1" aria-labelledby="modal-fotos-label" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-fotos-label"></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Boostrap caroussel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+            <div class="carousel-inner" id="carouselInner">
+              <!-- Pics are rendered dinamically with JS -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- End of carousel -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/details.js"></script>
+  <script src="./scripts/carouselDetails.js"></script>
 
 </body>
 
