@@ -11,7 +11,7 @@ function loadCarousel(){
                 const indicator = document.createElement('button');
                 indicator.setAttribute('type', 'button');
                 indicator.setAttribute('data-bs-target', '#carouselExampleCaptions');
-                indicator.setAttribute('data-bs-slide', index.toString());
+                indicator.setAttribute('data-bs-slide-to', index.toString());
 
                 if (index === 0){
                     indicator.classList.add('active');

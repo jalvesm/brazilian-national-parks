@@ -15,8 +15,8 @@ function updateParkDetails(park) {
     document.getElementById('parkName').textContent = park.name;
     document.getElementById('parkImage').src = park.image;
     document.getElementById('parkDescription').textContent = park.description;
-    document.getElementById('parkLong').textContent = park.location_coordinates[0].toFixed(2);
-    document.getElementById('parkLat').textContent = park.location_coordinates[1].toFixed(2);
+    document.getElementById('parkLong').textContent = `Longitude: ${park.location_coordinates[0].toFixed(2)}`;
+    document.getElementById('parkLat').textContent = `Latitude: ${park.location_coordinates[1].toFixed(2)}`;
     document.getElementById('parkData').textContent = park.data;
     document.getElementById('parkAuthor').textContent = park.author;
   } else {
