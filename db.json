@@ -1,0 +1,284 @@
+{
+    "parks": [
+        {
+            "id": 1,
+            "name": "Parque Nacional da Serra do Cipó",
+            "state": "Minas Gerais",
+            "data": "12/02/2017",
+            "tinyDescription": "A Serra do Cipó, em Minas Gerais, Brasil, encanta com paisagens de cerrado, cachoeiras e trilhas. Abriga o Parque Nacional, com biodiversidade exuberante, sendo destino popular para ecoturismo, esportes de aventura e apreciação da natureza.",
+            "description": "A serra do Cipó é uma formação geológica localizada no estado de Minas Gerais, entre os municípios de Itambé do Mato Dentro, Jaboticatubas, Morro do Pilar, Nova União e Santana do Riacho. Faz parte da província geológica da serra do Espinhaço. Sua história geológica é complexa e data do período Pré-Cambriano, com suas rochas arenosas que foram formadas por depósitos marinhos há mais de 1,7 bilhão de anos. Além da importância geológica, a serra do Cipó é considerada um divisor natural das bacias hidrográficas dos rios São Francisco e Doce. A diversidade da sua vegetação é altíssima, e muitas espécies são encontradas somente ali. A fauna é representativa e abriga várias espécies ameaçadas de extinção. Para preservar este patrimônio natural, foi criado o Parque Nacional da Serra do Cipó. São ao todo cem mil hectares de cerrados, campos rupestres e matas, além de rios, cachoeiras, cânions, cavernas e sítios arqueológicos preservados. Fonte: Wikipédia",
+            "location_coordinates": [
+                -43.618318787041375,
+                -19.349278297565
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Parque_Nacional_da_Serra_do_Cip%C3%B3_%2832562310920%29.jpg/1024px-Parque_Nacional_da_Serra_do_Cip%C3%B3_%2832562310920%29.jpg",
+            "author": "upslon (flickr)"
+        },
+        {
+            "id": 2,
+            "name": "Parque Nacional do Caparaó",
+            "state": "Espírito Santo & Minas Gerais",
+            "data": "26/07/2018",
+            "tinyDescription": "Localizado na Serra do Caparaó, na divisa dos estados de Minas Gerais e Espírito Santo, o Parque Nacional do Caparaó é um dos ícones do montanhismo no Brasil e abriga o terceiro ponto mais alto do País, o Pico da Bandeira, que tem 2.892 metros de altitude. Além dele, estão na Unidade de Conservação (UC) cinco dos dez picos mais altos de todo o território nacional. Fonte: ICMBIo",
+            "description": "O parque está localizado na divisa entre os estados do Espírito Santo e Minas Gerais e ocupa sete cidades do lado capixaba e quatro do lado mineiro. Cerca de 80% do parque está no estado do Espírito Santo. O Pico da Bandeira, com 2.891 metros, ponto mais elevado do parque, localiza-se na divisa dos estados. O Pico do Cristal, com 2.769 metros fica exclusivamente em território mineiro. O parque abriga ainda outros picos, menores em tamanho, mas também de altitudes consideráveis, como o Morro da Cruz do Negro (2.658 metros), a Pedra Roxa (2.649 metros), o Pico dos Cabritos ou do Tesouro (2.620 metros), o Pico do Tesourinho (2.584 metros), e a Pedra Menina (2.037 metros) todos em território capixaba. Este parque é uma das mais representativas áreas de Mata Atlântica em território capixaba, que além de cobrir boa parte da Serra do Caparaó, também é encontrada nas encostas das Serras do Castelo, do Forno Grande e da Pedra Azul. A Serra do Caparaó é uma ramificação da Serra da Mantiqueira, se interligando com as Serras do Brigadeiro e do Pai Inácio em Minas Gerais. (fonte: wikipédia)",
+            "location_coordinates": [
+                -41.843431746640874,
+                -20.41953091675886
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Parque_Nacional_de_Capara%C3%B3_Pedro_Fatore_%2801%29.png/1280px-Parque_Nacional_de_Capara%C3%B3_Pedro_Fatore_%2801%29.png",
+            "author": "Pedro Fatore"
+        },
+        {
+            "id": 3,
+            "name": "Parque Nacional da Serra da Canastra",
+            "state": "Minas Gerais",
+            "data": "30/09/2015",
+            "tinyDescription": "O Parque Nacional da Serra da Canastra, em Minas Gerais, Brasil, destaca-se por abrigar nascentes do Rio São Francisco, cânions, vegetação de cerrado e vida selvagem diversificada, incluindo o lobo-guará. Reconhecido pela preservação ambiental, é procurado por ecoturismo e observação da natureza.",
+            "description": "O Parque Nacional da Serra da Canastra é um dos mais importantes parques nacionais brasileiros, criado em 1972 através do decreto 70.355 de 1972. Dentro do parque está localizada a nascente histórica do rio São Francisco, no município de São Roque de Minas. Previsto com uma área inicial de 200 mil hectares o Parque Nacional só se efetivou em uma área de 71.525 ha e isto até hoje é causa de muito conflito na região, devido à intenção do IBAMA de desapropriar o restante da área originalmente prevista. É administrado pelo Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio). A Serra da Canastra tem o formato de um baú, daí a origem do nome, pois canastra é um tipo de baú antigo. A cachoeira Casca d'Anta com aproximadamente 186 metros de altura é um dos principais atrativos do Parque, saindo de um corte natural da Serra de aproximadamente 144 metros, ou seja, a altura da Serra chega a 330 metros. O Rio São Francisco nasce 14 quilômetros antes da sua queda principal. O Parque protege um cenário de rara beleza, sua vegetação de transição entre a 'borda da Mata Atlântica' e o 'início do Cerrado', com predominância de Campos de Altitude que abrigam inúmeras espécies da fauna e da flora do cerrado, como o lobo guará, o tamanduá-bandeira, o veado-campeiro, diversos gaviões e espécies ameaçadas de extinção como o pato mergulhão e o tatu-canastra. A água é o fator preponderante no parque, cujas nascentes, que chegam a centenas, surgem em função da umidade que a rocha fria absorve do ar, principalmente no período da noite.  (fonte: wikipédia)",
+            "location_coordinates": [
+                -46.417594603367085,
+                -20.25490014650645
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Serra_da_Canastra%2C_Casca_D%27anta.jpg/1280px-Serra_da_Canastra%2C_Casca_D%27anta.jpg",
+            "author": "Gustavo Couto"
+        },
+        {
+            "id": 4,
+            "name": "Parque Nacional Marinhos dos Abrolhos",
+            "state": "Bahia",
+            "data": "21/08/2017",
+            "tinyDescription": "O Parque Nacional Marinho dos Abrolhos é um parque nacional estabelecido em 1983, abrangendo a maior parte da área do Arquipélago dos Abrolhos, no estado da Bahia, Brasil.",
+            "description": "O PARNA MAR Abrolhos protege uma porção significativa do maior banco de corais e mais importante berçário das baleias jubartes do Atlântico Sul, além de espécies de tartarugas marinhas, aves marinhas e uma infinidade de peixes e invertebrados que compõem a maior biodiversidade marinha do Brasil e do Atlântico Sul. A região despertou grande curiosidade de Charles Darwin e outros cientistas e ilustres navegantes como Américo Vespúcio, que já estiveram no local. Um levantamento da biodiversidade da região registrou aproximadamente 1.300 espécies, 45 delas consideradas ameaçadas, segundo listas da União Internacional para a Conservação da Natureza (IUCN) e do Ministério do Meio Ambiente (MMA). O parque protege o principal berçário das baleias jubarte no Atlântico Sul, que migram para o Banco dos Abrolhos para se reproduzirem e ter seus filhotes (de junho à novembro). É a única região do planeta onde é possível encontrar o coral-cérebro (Mussismilia braziliensis), conhecido por seu aspecto peculiar. Abrolhos também abriga diversas espécies de tartarugas marinhas ameaçadas como as tartarugas cabeçuda, verde e de pente. Além dessas, pode-se ser surpreendido pela a tartaruga-de-couro, a de mais raridade entre as espécies na região. (fonte: ICMBio)",
+            "location_coordinates": [
+                -38.700067017225535,
+                -17.969298877139067
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Parque_Nacional_Marinhos_dos_Abrolhos._Bahia._Por_Gustavo_Abrahim_16.jpg/1280px-Parque_Nacional_Marinhos_dos_Abrolhos._Bahia._Por_Gustavo_Abrahim_16.jpg",
+            "author": "Gustavo Abrahim"
+        },
+        {
+            "id": 5,
+            "name": "Parque Estadual do Ibitipoca",
+            "state": "Minas Gerais",
+            "data": "1/08/2007",
+            "tinyDescription": "O Parque Estadual do Ibitipoca, em Minas Gerais, Brasil, é famoso por suas formações rochosas imponentes, grutas, cachoeiras e o emblemático Pico do Pião. Oferece trilhas diversas, piscinas naturais e rica biodiversidade, sendo um destino ideal para ecoturismo e apreciação da natureza.",
+            "description": "O Parque Estadual do Ibitipoca é um parque florestal localizado no município de Lima Duarte, no estado de Minas Gerais, no Brasil. Com uma área de 1 488 hectares, está situado a três quilômetros do distrito de Conceição do Ibitipoca, que se sustenta com o turismo atraído pelo parque. 'Ibitipoca' é um termo de origem tupi que significa 'montanha estourada', 'serra fendida', através da junção dos termos ybytyra ('montanha') e pok ('estourar'). Esse termo faz alusão aos raios e trovões caídos na serra de Ibitipoca. O clima é tropical de altitude, com verões amenos e chuvosos sendo novembro, dezembro e janeiro os mais chuvosos e inverno frio e seco, com os meses de junho, julho e agosto os meses mais secos. O parque apresenta boa infraestrutura para os visitantes e está sobre um afloramento de quartzito sobre o qual se desenvolve um solo (Cambissolo) pouco profundo constituído principalmente de matéria orgânica e areia (areno-quartzosos) formada pela erosão da rocha. Por isto, grande parte da vegetação é xerófita, isto é, constituída de gramíneas e herbáceas de baixo porte. Nas regiões onde o solo tem pouca profundidade, localizam-se arbustos, cactos e bromélias, caracterizando típicos campos rupestres. Os rios do parque apresentam cor de caramelo devido ao alto teor de matéria orgânica. (fonte: Wikipedia)",
+            "location_coordinates": [
+                -43.8835068226844,
+                -21.70194302983183
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Parque_Estadual_do_Ibitipoca-MG_%281518095701%29.jpg/1280px-Parque_Estadual_do_Ibitipoca-MG_%281518095701%29.jpg",
+            "author": "Glauco Umbelino"
+        },
+        {
+            "id": 6,
+            "name": "Parque Nacional da Chapada Diamantina",
+            "state": "Bahia",
+            "data": "14/05/2022",
+            "tinyDescription": "O Parque Nacional da Chapada Diamantina, na Bahia, Brasil, é uma joia natural com cânions, picos, cachoeiras e grutas. Abriga o Pico do Barbado, o Poço Encantado e o Morro do Pai Inácio, sendo um paraíso para trilhas, escaladas e contemplação da natureza.",
+            "description": "O parque fica no bioma caatinga e abrange 152 142 hectares (375 950 acres), e é administrado pelo Instituto Chico Mendes de Conservação da Biodiversidade. O parque fica em parte da Chapada Diamantina, em um planalto delimitado por falésias de 41 751 quilômetros quadrados no centro da Bahia. As altitudes no planalto geralmente variam de 500 a 1 000 metros. Nas partes mais montanhosas existem vários picos de 1 600 a 1 800 metros e alguns com mais de 2 000 metros. O planalto forma um divisor de águas, desaguando de um lado no rio São Francisco e do outro nos rio Paraguaçu. A vegetação conta com plantas típicas da caatinga, como xerófitas em altitudes de cerca de 500 a 900 metros, vegetação de Mata Atlântica ao longo dos cursos de água, além de prados e campos rupestres mais acima. As queimadas são frequentes na área do PARNA-CD. O uso do fogo indiscriminadamente é, historicamente, algo comum e anualmente sua área sofre com a incidência de incêndios, que ali ocorrem especialmente no período entre agosto a março, e o fogo está presente nas atividades tradicionais da região da Chapada, até mesmo no interior do Parque. (fonte: Wikipedia)",
+            "location_coordinates": [
+                -41.33097912251735,
+                -12.789060466679421
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Parque_Nacional_da_Chapada_Diamantina_-_Gabriela_Coutinho_%2801%29.jpg/1280px-Parque_Nacional_da_Chapada_Diamantina_-_Gabriela_Coutinho_%2801%29.jpg",
+            "author": "Gabriela Coutinho"
+        },
+        {
+            "id": 7,
+            "name": "Parque Estadual do Itacolomi",
+            "state": "Minas Gerais",
+            "data": "23/07/2014",
+            "tinyDescription": "O Parque Estadual do Itacolomi, que possui portarias nos municípios de Ouro Preto e Mariana, é um reserva de Mata Atlântica e um berço da história de Minas Gerais. O Pico do Itacolomi, marca registrada do Parque, com seus 1.772m de altitude, foi ponto de referência para os antigos viajantes da Estrada Real que desejavam chegar à Vila Rica. ",
+            "description": "O Parque Estadual do Itacolomi é uma Unidade de Conservação estadual de Proteção Integral, situada nas cidades mineiras de Ouro Preto e Mariana, sob a responsabilidade do Instituto Estadual de Florestas (IEF),em Minas Gerais. Criado através da Lei estadual nº 4.495 de 1967, com uma área territorial de 7.543 hectares e altitudes variáveis entre 700 e 1772 m, está aberto à visitação pública desde Maio de 2004. O Parque do Itacolomi está localizado na porção sul da Serra do Espinhaço. Sua área é composta de regiões de Mata Atlântica com afloramentos rupestres nas porções mais elevadas. Além de sua grande beleza cênica, rica biodiversidade e geodiversidade, é também um marco histórico-cultural. Possui algumas estruturas, como um Centro de Visitantes, a Casa Bandeirista e o Museu do Chá. A visitação é autoguiada tanto na parte histórica quanto nas trilhas e expedições. Os monitores estão a disposição dos visitantes para trocarem experiências e realizarem atividades ambientais. O Parque criou ao longo dos anos programas ambientais e educacionais que visam sensibilizar a comunidade à preservação do meio ambiente em conjunto a diversas ações que culminam na recuperação e preservação das florestas naturais. (fonte: Wikipedia)",
+            "location_coordinates": [
+                -43.483720333586355,
+                -20.431747658795352
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Itacolomi_sob_nuvens.jpg/1280px-Itacolomi_sob_nuvens.jpg",
+            "author": "Osvaldo Vasconcelos"
+        },
+        {
+            "id": 8,
+            "name": "Parque Nacional das Sempre-Vivas",
+            "state": "Minas Gerais",
+            "data": "14/04/2016",
+            "tinyDescription": "O Parque Nacional das Sempre Vivas é uma unidade de conservação brasileira e está localizado na Serra do Espinhaço, Minas Gerais, com sua sede no município de Diamantina.",
+            "description": "O parque situa-se na Serra do Espinhaço no divisor de águas das bacias dos rios São Francisco e Jequitinhonha, no norte de Minas Gerais, Brasil, a aproximadamente 300 quilômetros de Belo Horizonte. Abrange quatro municípios: Olhos-d'Água, Diamantina, Buenópolis e Bocaiúva. O local abriga grande concentração de nascentes de afluentes do rio Jequitinhonha, com belas quedas d'água. A paisagem física da região é marcada por características extremamente heterogêneas. O mapeamento geológico feito para a região relaciona quatro grandes grupos geológicos: a planície aluvionar, a cobertura dendrito-laterítica, diques e soleiras metabásicas e o super grupo Espinhaço (formações rio Pardo e córrego Bandeira). As seguintes formações podem ser identificadas na região: formações savânicas, floresta estacional semi-decidual, mata ciliar, floresta paludosa, vereda, campos hidromórficos, campos rupestres e lagoas marginais. A região apresenta clima tropical semi-úmido com temperatura média anual de 20ºC e precipitação média anual variando de 1250 a 1500 mm. (fonte: Wikipedia)",
+            "location_coordinates": [
+                -43.708878450683635,
+                -17.97013751707329
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sempre-vivas_sob_os_cosmos.png",
+            "author": "Giancarlo Zorzin"
+        },
+        {
+            "id": 9,
+            "name": "Parque Nacional do Descobrimento",
+            "state": "Bahia",
+            "data": "31/12/2013",
+            "tinyDescription": "O Parque Nacional do Descobrimento, criado em 1999, é local de trilhas e de preservação da Mata Atlântica. Situado no extremo Sul da Bahia, está a 800 quilômetros da capital do estado, Salvador.",
+            "description": "O Parque Nacional do Descobrimento é um dos parques nacionais brasileiros e compõe junto com o Parque Nacional do Monte Pascoal e o do Pau Brasil um corredor ecológico das Reservas de Mata Atlântica da Costa do Descobrimento. Foi criado em 20 de abril de 1999, próximo das comemorações dos 500 anos do Brasil, como tentativa de preservar remanescentes de mata atlântica do sul da Bahia e ainda não tem infra-estrutura para ser aberto aos visitantes. É administrado pelo Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio). (fonte: Wikipedia)",
+            "location_coordinates": [
+                -39.42977567270786,
+                -17.094771696573144
+            ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Costa_do_Descobrimento.JPG/1280px-Costa_do_Descobrimento.JPG",
+            "author": "Diego Teschi"
+        }
+    ],
+    "photos": [
+        {
+            "id": 11,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Parque_Nacional_da_Serra_do_Cip%C3%B3_%2832902059926%29.jpg",
+            "description": "Serra do Espinhaço, MG. 11 de fevereiro de 2017.",
+            "parkId": 1
+        },
+        {
+            "id": 12,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Parque_Nacional_da_Serra_do_Cip%C3%B3_%2832128502603%29.jpg",
+            "description": "Serra do Espinhaço, MG. 12 de fevereiro de 2017.",
+            "parkId": 1
+        },
+        {
+            "id": 13,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Cachoeira_das_Andorinhas_-_Parque_Nacional_da_Serra_do_Cip%C3%B3_-_Minas_Gerais.jpg",
+            "description": "Cachoeira das Andorinhas, 23 dezembro de 2017.",
+            "parkId": 1
+        },
+        {
+            "id": 14,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Parque_Nacional_da_Serra_do_Cip%C3%B3_%2832818664001%29.jpg",
+            "description": "Serra do Espinhaço, MG. 11 de fevereiro de 2017.",
+            "parkId": 1
+        },
+        {
+            "id": 15,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Parque_Nacional_da_Serra_do_Cip%C3%B3_%2832901566266%29.jpg",
+            "description": "Serra do Espinhaço, MG. 11 de fevereiro de 2017.",
+            "parkId": 1
+        },
+        {
+            "id": 16,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Parque_Nacional_da_Serra_do_Cip%C3%B3_%2832127963663%29.jpg",
+            "description": "Serra do Espinhaço, MG. 11 de fevereiro de 2017.",
+            "parkId": 1
+        },
+        {
+            "id": 21,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Parque_Nacional_do_Capara%C3%B3_14.jpg",
+            "description": "Vista para o Pico do Calçado, a partir do Pico da Bandeira.",
+            "parkId": 3
+        },
+        {
+            "id": 22,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Parque_Nacional_do_Capara%C3%B3-ES.jpg",
+            "description": "Vista do alto do Pico da Bandeira.",
+            "parkId": 3
+        },
+        {
+            "id": 23,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Parque_Nacional_do_Capara%C3%B3_por_Eltuir_Umbelina_28.jpg",
+            "description": "Vista do alto do Pico da Bandeira.",
+            "parkId": 3
+        },
+        {
+            "id": 24,
+            "image": "hhttps://upload.wikimedia.org/wikipedia/commons/1/14/Parque_Nacional_do_Capara%C3%B3_por_Eltuir_Umbelina_35.jpg",
+            "description": "Fotos tiradas no Pico da Bandeira e no entorno da Serra do Caparaó.",
+            "parkId": 3
+        },
+        {
+            "id": 25,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Parque_Nacional_do_Capara%C3%B3_por_Eltuir_Umbelina_29.jpg",
+            "description": "Vista do alto do Pico da Bandeira.",
+            "parkId": 3
+        },
+        {
+            "id": 31,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Parque_Nacional_da_Serra_da_Canastra_Ilse_Klasing_Sparovek_%2819%29.jpg",
+            "description": "17 July 2010, 06:46:14",
+            "parkId": 3
+        },
+        {
+            "id": 32,
+            "image": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_da_Serra_da_Canastra_Jose_Garcia_Junior_(05).jpg",
+            "description": "29 March 2018, 12:05:16",
+            "parkId": 3
+        },
+        {
+            "id": 41,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Parque_Nacional_Marinhos_dos_Abrolhos._Bahia._Por_Gustavo_Abrahim_27.jpg",
+            "description": "29 August 2017, 13:50:07",
+            "parkId": 4
+        },
+        {
+            "id": 42,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Parque_Nacional_Marinhos_dos_Abrolhos._Bahia._Por_Gustavo_Abrahim_22.jpg",
+            "description": "19 September 2017, 11:45:33",
+            "parkId": 4
+        },
+        {
+            "id": 51,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Parque_Estadual_do_Ibitipoca_06.jpg",
+            "description": "10 May 2016",
+            "parkId": 5
+        },
+        {
+            "id": 52,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/PARQUE_ESTADUAL_DO_IBITIPOCA-MAGDA_GALEGO%2825%29.jpg",
+            "description": "O Parque Estadual do Ibitipoca é um parque florestal localizado no município de Lima Duarte, no estado de Minas Gerais, no Brasil",
+            "parkId": 5
+        },
+        {
+            "id": 61,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Parque_Nacional_da_Chapada_Diamantina_Gi%C3%A1como_Mancini_13.jpg",
+            "description": " parque nacional em Palmeiras, Mucugê, Lençóis, Ibicoara e Andaraí, Bahia",
+            "parkId": 6
+        },
+        {
+            "id": 62,
+            "image": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_da_Chapada_Diamantina_Nilton_Vasques_Carvalho_Junior_(01).jpg",
+            "description": "Parque Nacional da Chapada Diamantina de nível Federal, localizado (a) em Palmeiras (BA), Mucugê (BA), Lençóis (BA), Ibicoara (BA), Andaraí (BA))",
+            "parkId": 6
+        },
+        {
+            "id": 71,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Trilha_Parque_Estadual_do_Itacolomi.jpg",
+            "description": "Foto tirada no Parque Itacolomi, na cidade de Ouro Preto, Minas gerais,",
+            "parkId": 7
+        },
+        {
+            "id": 72,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Vista_do_Pico_do_Itacolomi_4.jpg",
+            "description": "Formações rochosas da trilha do Pico do Itacolomi.",
+            "parkId": 7
+        },
+        {
+            "id": 81,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Entre_serras_e_flores.jpg",
+            "description": "Na imagem, um campo de flores emoldura a Serra do Galho. Uma das várias formações da Serra do Espinhaço de Minas Gerais. O Parque é um centro de endemismo de Sempre-Vivas, ou seja, algumas dessas flores só ocorrem por ali.",
+            "parkId": 8
+        },
+        {
+            "id": 82,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/02-Parque_Nacional_das_Sempre_Vivas-MG-_Foto_de_Carolina_de_Melo_Franco.jpg/640px-02-Parque_Nacional_das_Sempre_Vivas-MG-_Foto_de_Carolina_de_Melo_Franco.jpg",
+            "description": "10 May 2015, 17:20:52",
+            "parkId": 8
+        }
+    ],
+    "highlights": [
+        {
+            "parkId": 1,
+            "id": 1
+        },
+        {
+            "parkId": 3,
+            "id": 2
+        },
+        {
+            "parkId": 4,
+            "id": 3
+        }
+    ]
+}

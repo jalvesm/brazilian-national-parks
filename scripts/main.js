@@ -20,7 +20,7 @@ function renderCard(park) {
 // Função para buscar detalhes do produto a partir do arquivo JSON
 async function fetchParkDetails() {
   try {
-    const response = await fetch('https://jsonserver1.joanamorais.repl.co/parks');
+    const response = await fetch('https://jsonserver3.joanamorais.repl.co/parks');
     const data = await response.json();
     return data;
   } catch (error) {
@@ -71,7 +71,7 @@ function get_card_marker(park){
 
 
 function getLocations(map) {
-  const url = "https://jsonserver1.joanamorais.repl.co/parks";
+  const url = "https://jsonserver3.joanamorais.repl.co/parks";
   fetch(url)
     .then((response) => {
       return response.json();

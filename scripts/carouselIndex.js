@@ -1,5 +1,5 @@
 function loadCarousel(){
-    fetch('https://jsonserver1.joanamorais.repl.co/highlights/?_expand=park')
+    fetch('https://jsonserver3.joanamorais.repl.co/highlights/?_expand=park')
         .then(response => response.json())
         .then(data => {
             const carouselIndicators = document.getElementById('carouselIndicators');

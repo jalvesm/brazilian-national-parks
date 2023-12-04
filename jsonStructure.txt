@@ -1,0 +1,15 @@
+{
+    parks:
+        item[0]
+            id:
+        item[1]
+            id:
+    photos:
+        id:
+        image:
+        description:
+        parkId          // deve ser igual ao parkId da chave parks;
+    highlights:
+        parkId:         // deve ser igual ao parkId da chave parks;
+        id:             // Id da própria chave highlights [10:00]
+}

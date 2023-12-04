@@ -1,4 +1,4 @@
-const urlBase = "https://jsonserver1.joanamorais.repl.co";
+const urlBase = "https://jsonserver3.joanamorais.repl.co";
 
 async function renderDetails() {
   const urlParams = new URLSearchParams(window.location.search);

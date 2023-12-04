@@ -3,7 +3,7 @@ function loadCarousel(){
     const urlParams = new URLSearchParams(window.location.search);
     const parkId = urlParams.get('id');
 
-    fetch(`https://jsonserver1.joanamorais.repl.co/photos?parkId=${parkId}`)
+    fetch(`https://jsonserver3.joanamorais.repl.co/photos?parkId=${parkId}`)
         .then(response => response.json())
         .then(data => {
             const carouselIndicators = document.getElementById('carouselIndicators');
